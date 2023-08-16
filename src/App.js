@@ -19,6 +19,7 @@ function App() {
     <div className="App">
       <h1 className='title'>Search Filter</h1>
       <input 
+      autocomplete="off"
       id="search"
       className='search-bar'
       type='text' 
