@@ -19,7 +19,7 @@ function App() {
     <div className="App">
       <h1 className='title'>Search Filter</h1>
       <input 
-      autocomplete="off"
+      autoComplete='off'
       id="search"
       className='search-bar'
       type='text' 
@@ -32,13 +32,13 @@ function App() {
       }}
       />
       <div className='search-items'>
-        {MockData.filter((person) => ({
+        {MockData.filter((person) => {
         if(searchTerm === "") {
           return null;
         } else if (person.first_name.toLowerCase().includes(searchTerm.toLowerCase())) {
           return person;
         }
-        })).map((person, key) => {
+        }).map((person, key) => {
           return (
             <div 
             className='search-item' 

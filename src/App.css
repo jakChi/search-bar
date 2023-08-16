@@ -9,6 +9,8 @@
     --border-color: #D62828;
     --sec-color: #FCBF49;
     --shadow-color: #37000A;
+    --title-font: 'Dancing Script', cursive;
+    --sec-font: 'Caveat', cursive;
 }
 
 body {
@@ -48,7 +50,7 @@ body {
     background-color: var(--body-color);
     color: var(--sec-color);
     outline: none;
-    font-size: 16px;
+    font-size: 25px;
     font-family: var(--sec-font);
     text-align: center;
     transition: all 400ms ease;   
@@ -75,6 +77,7 @@ body {
 
 .search-item {
     text-align: center;
+    font-family: var(--sec-font);
 }
 
 .up-btn {
